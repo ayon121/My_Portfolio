@@ -9,7 +9,7 @@ const Banner = () => {
         loop : 6
       })
     return (
-        <div className="featuredimage bg-fixed mb-5  h-screen font-poppins">
+        <div className="featuredimage bg-fixed mb-5  h-auto font-poppins">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center">
                 <div className="px-4">
                     <h1 className="text-2xl md:text-4xl lg:text-5xl text-white py-2 ">Ayon Saha</h1>
