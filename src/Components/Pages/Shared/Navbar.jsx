@@ -25,7 +25,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* logo */}
-                    <h1 className="text-white text-xl md:text-2xl border-y-2 rounded-md py-1"><span className="text-3xl text-[#FF444A]">A</span><span className="">yon Saha</span></h1>
+                    <h1 className="text-white text-xl md:text-3xl border-y-2 rounded-md py-1"><span className="text-3xl md:text-4xl text-[#FF444A]">A</span><span className="">S</span></h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
