@@ -1,0 +1,7 @@
+.featuredimage {
+    background-blend-mode: darken;
+    background-image: url('../../../../assets/images/banner1.jpg');
+    background-repeat: no-repeat;
+    background-position:  right bottom,left top;
+    background-size: cover;
+}
