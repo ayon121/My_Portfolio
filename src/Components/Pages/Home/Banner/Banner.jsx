@@ -5,7 +5,8 @@ import mypic from "../../../../assets/images/mypic.jpg"
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 const Banner = () => {
     const [text] = useTypewriter({
-        words: ['MERN Stack Developer', 'Full Stack Developer', 'Frontend Developer'],
+        words: ['MERN Stack Developer', 'Full Stack Developer', 'Frontend Developer' , 'React Developer'],
+        loop : 6
       })
     return (
         <div className="featuredimage bg-fixed mb-5  h-screen font-poppins">

@@ -4,6 +4,7 @@
 import Navbar from "../Shared/Navbar";
 import Banner from "./Banner/Banner";
 import LatestProjects from "./LatestProjects/LatestProjects";
+import MyServices from "./MyServices/MyServices";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
            <Navbar></Navbar>
            <Banner></Banner>
            <LatestProjects></LatestProjects>
+           <MyServices></MyServices>
         </div>
     );
 };
