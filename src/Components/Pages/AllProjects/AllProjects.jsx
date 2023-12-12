@@ -6,7 +6,7 @@ import Footer from "../Shared/Footer";
 
 const AllProjects = () => {
     const [projects , SetProjects] = useState([])
-    fetch('/public/projects.json')
+    fetch('projects.json')
     .then(res => res.json())
     .then(data => SetProjects(data))
     return (

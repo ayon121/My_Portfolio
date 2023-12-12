@@ -1,7 +1,7 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
 import "../Banner/Banner.css"
-import mypic from "../../../../assets/images/mypic.jpg"
+import mypic from "../../../../assets/images/mypic2.jpg"
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 const Banner = () => {
     const [text] = useTypewriter({
@@ -14,7 +14,7 @@ const Banner = () => {
                 <div className="px-4">
                     <h1 className="text-2xl md:text-4xl lg:text-5xl text-white py-2 ">Ayon Saha</h1>
                     <h2 className="text-[#FF444A] text-sm md:text-lg">{text}<Cursor cursorColor='red' /></h2>
-                    <p className="py-2 text-xs md:text-sm w-3/4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur error ullam numquam dignissimos ipsa porro quos doloribus! Recusandae magni illo, dolor veritatis non culpa voluptatibus laudantium ullam cumque reprehenderit dicta.</p>
+                    <p className="py-2 text-xs md:text-sm w-3/4 text-white">I am a web developer. I always try to turn creative ideas into responsive and user-friendly websites. My goal is to be an expert developer.</p>
                     <button className="btn">Download CV</button>
                 </div>
                 <div>

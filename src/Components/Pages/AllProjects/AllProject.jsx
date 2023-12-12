@@ -10,7 +10,7 @@ const AllProject = ({project}) => {
                 <h2 className="card-title">{project_name}</h2>
                 <p>{project_details.slice(0,99)}...</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Details</button>
+                    <button className="btn btn-xs sm:btn-sm md:btn-md ">Details</button>
                 </div>
             </div>
         </div>
