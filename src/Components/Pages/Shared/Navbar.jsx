@@ -1,13 +1,13 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const navlinks = <>
         <li><NavLink to="/" className={({ isActive }) => isActive ? 'text-sm font-bold text-[#FF444A]' : 'text-sm bg-transparent text-[#f8f5f5]'}>Profile</NavLink></li>
         <li><NavLink className={({ isActive }) => isActive ? 'text-sm  font-bold text-[#FF444A]' : 'text-sm  bg-transparent text-[#f8f5f5]'} to="/projects" >My Projects</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? 'text-sm  font-bold text-[#FF444A]' : 'text-sm  bg-transparent text-[#f8f5f5]'} to="/About Me" >About Me</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? 'text-sm  font-bold text-[#FF444A]' : 'text-sm  bg-transparent text-[#f8f5f5]'} to="/aboutme" >About Me</NavLink></li>
 
 
 
@@ -33,7 +33,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn btn-sm sm:btn-sm md:btn-md ">Contact Me</a>
+                    <Link to="/contact"><a className="btn btn-sm sm:btn-sm md:btn-md ">Contact Me</a></Link>
+                    
                 </div>
             </div>
         </div>

@@ -15,7 +15,8 @@ const Banner = () => {
                     <h1 className="text-2xl md:text-4xl lg:text-5xl text-white py-2 ">Ayon Saha</h1>
                     <h2 className="text-[#FF444A] text-sm md:text-lg">{text}<Cursor cursorColor='red' /></h2>
                     <p className="py-2 text-xs md:text-sm w-3/4 text-white">I am a web developer. I always try to turn creative ideas into responsive and user-friendly websites. My goal is to be an expert developer.</p>
-                    <button className="btn">Download CV</button>
+                    <a href="https://drive.google.com/file/d/1C-vJosdSAjaC8i-u_GbmEY0mrgTmZ6WA/view?usp=drivesdk" target="blank"><button className="btn">Download CV</button></a>
+                    
                 </div>
                 <div>
                     <img className="rounded-full h-3/6" src={mypic} alt="profile img" />

@@ -10,6 +10,8 @@ import Root from './Components/Pages/layout/Root';
 import Home from './Components/Pages/Home/Home';
 import ErrorPage from './Components/Pages/ErrorPAge/ErrorPage';
 import AllProjects from './Components/Pages/AllProjects/AllProjects';
+import AboutMe from './Components/Pages/AboutMe/AboutMe';
+import Contactme from './Components/Pages/Contactme/Contactme';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
       {
         path : '/projects',
         element : <AllProjects></AllProjects>
+      },
+      {
+        path : "/aboutme",
+        element : <AboutMe></AboutMe>
+      },
+      {
+        path : "/contact", 
+        element : <Contactme></Contactme>
       }
     ]
   },
