@@ -4,46 +4,27 @@
 
 import Navbar from "../Shared/Navbar";
 import Title from "../Shared/Title";
-import { useForm, ValidationError } from '@formspree/react';
+
+import ContactForm from "./ContactForm";
 const Contactme = () => {
-    const [state, handleSubmit] = useForm("mdoqawba");
-    if (state.succeeded) {
-        return <div>
-            <Navbar></Navbar>
-            <Title title={'Contact Me'}></Title>
-            <p className="text-2xl md:text-3xl font-extrabold mt-5 text-center">Thanks For Contacting</p>
-        </div>
-    }
+    
 
     return (
         <div>
             <Navbar></Navbar>
             <Title title={'Contact Me'}></Title>
-            <div className="max-w-5xl mx-auto ">
-                <div className="flex flex-col md:flex-row px-4 mt-5 gap-4 border-4">
-                    <div>
-                        <h1>Contact</h1>
+            <div className="max-w-6xl mx-auto font-poppins border-4 py-4 my-4 border-[#FF444A] rounded-3xl">
+                <div className="flex flex-col md:flex-row px-4 mt-5 gap-4 ">
+                    <div className="w-1/2 px-2">
+
+                        <p>Welcome to my contact page, where ideas meet expertise. Let's create something extraordinary together – reach out and let the collaboration begin</p>
                     </div>
                     {/* login form */}
-                    <div>
-                        <form onSubmit={handleSubmit} className="text-center">
-                            <input id="email"
-                                type="email"
-                                name="email"
-                                placeholder="Type your email"
-                                className="input input-bordered input-error w-full max-w-xs my-2"
-                                required />
-                            <ValidationError
-                                prefix="Email"
-                                field="email"
-                                errors={state.errors}
-                            /><br />
-                            <textarea id="message"
-                                name="message"
-                                className="textarea textarea-error w-full max-w-xs my-2 " placeholder="message" required></textarea>
-                            <br />
-                            <input type="submit" disabled={state.submitting} className="btn text-[#FF444A] border-[#FF444A]" value="Send" />
-                        </form>
+
+                    <div className=" w-2/4">
+                        <h1 className="text-2xl md:text-3xl px-3 my-3">Unlocking Digital Potential with Innovative Solutions</h1>
+                        <ContactForm></ContactForm>
+                        
                     </div>
 
                 </div>
