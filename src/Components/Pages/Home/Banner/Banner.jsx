@@ -19,7 +19,7 @@ const Banner = () => {
                     
                 </div>
                 <div>
-                    <img className="rounded-full h-3/6  opacity-85 border-x-8 border-[#FF444A]" src={mypic} alt="profile img" />
+                    <img className="rounded-full h-3/6  opacity-85 border-x-8 border-[#FF444A] hover:border-y-8  duration-300" src={mypic} alt="profile img" />
                 </div>
             </div>
         </div>
