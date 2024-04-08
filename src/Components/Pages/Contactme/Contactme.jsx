@@ -30,7 +30,7 @@ const Contactme = () => {
                         <div className=" md:hidden block">
                             <Lottie animationData={contactAnimation} loop={true} className="w-full md:w-4/5 lg:w-4/6 h-2/3"></Lottie>
                         </div>
-                        <p className="w-full md:w-4/5  px-3 my-3">Welcome to my contact page, where ideas meet expertise. Let's create something extraordinary together – reach out and let the collaboration begin</p>
+                        <p className="w-full md:w-4/5  px-3 my-3">Welcome to my contact page, where ideas meet expertise. Lets create something extraordinary together – reach out and let the collaboration begin</p>
                         <ContactForm></ContactForm>
 
                     </div>
