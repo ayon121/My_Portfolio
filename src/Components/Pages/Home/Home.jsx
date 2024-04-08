@@ -6,7 +6,7 @@ import Navbar from "../Shared/Navbar";
 import Banner from "./Banner/Banner";
 import LatestProjects from "./LatestProjects/LatestProjects";
 import MyServices from "./MyServices/MyServices";
-import Skills from "./Skills/Skills";
+import TeachIKnow from "./TeachIKnow/TeachIKnow";
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
            <Navbar></Navbar>
            <Banner></Banner>
            <LatestProjects></LatestProjects>
-           <Skills></Skills>
+           <TeachIKnow></TeachIKnow>
            <MyServices></MyServices>
            <Footer></Footer>
         </div>
