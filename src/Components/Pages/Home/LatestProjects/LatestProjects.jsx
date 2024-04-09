@@ -14,11 +14,9 @@ const LatestProjects = () => {
     return (
         <a href="projects">
             <div>
-                <Title title={"All My Projects"}></Title>
+                <Title title={"Latest Projects"}></Title>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-3 gap-5 mb-6">
-                    {
-                        projects.map(project => <LatestProject key={project.id} project={project}></LatestProject>)
-                    }
+                    
                 </div>
 
 

@@ -1,18 +1,17 @@
 // import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-const LatestProject = ({project}) => {
-    const {id ,project_name , project_details , project_img5} = project
+const LatestProject = ({project_name , project_details , project_img}) => {
+  
     return (
         <div className="card w-auto bg-base-100 shadow-xl">
-            <figure><img src={project_img5} alt="Shoes" /></figure>
+            <figure><img src={project_img} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{project_name}</h2>
-                <p>{project_details.slice(0,99)}...</p>
+                <p>{project_details}...</p>
                 <div className="card-actions justify-end">
-                    <Link to={`/projectDetails/${id}`}><button className="btn btn-xs sm:btn-sm md:btn-md">Details</button></Link>
-                    
+                    {/* <Link to={`/projectDetails/${id}`}><button className="btn btn-xs sm:btn-sm md:btn-md">Details</button></Link> */}  
                 </div>
             </div>
         </div>
@@ -20,7 +19,9 @@ const LatestProject = ({project}) => {
 };
 
 LatestProject.propTypes = {
-    project : PropTypes.object
+    project_name : PropTypes.string,
+    project_details : PropTypes.string,
+    project_img : PropTypes.string
 };
 
 export default LatestProject;
