@@ -1,6 +1,7 @@
 import { CiLinkedin } from "react-icons/ci";
 import pic from "../../../../assets/images/mypic2.jpg"
 import { FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Aboutme = () => {
     return (
         <div className=" mx-auto my-20 flex flex-col items-center justify-center md:flex-row">
@@ -27,7 +28,9 @@ const Aboutme = () => {
                         <a className="text-3xl" href="https://web.facebook.com/ayonsaha.ayon.794?_rdc=1&_rdr" target="blank"><FaFacebookSquare /></a>
                     </div>
                 </div>
-                <div><button className="btn btn-sm hover:bg-white hover:border-red-400 text-black hover:text-red-400">SEND MESSAGE</button></div>
+                <div>
+                    <Link to="/contact"><button className="btn btn-sm hover:bg-white hover:border-red-400 text-black hover:text-red-400">SEND MESSAGE</button></Link>
+                </div>
             </div>
         </div>
     );

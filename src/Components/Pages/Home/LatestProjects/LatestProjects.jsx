@@ -12,7 +12,6 @@ const LatestProjects = () => {
         .then(res => res.json())
         .then(data => SetProjects(data))
     return (
-        <a href="projects">
             <div>
                 <Title title={"Latest Projects"}></Title>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-3 gap-5 mb-6">
@@ -23,7 +22,6 @@ const LatestProjects = () => {
 
 
             </div>
-        </a>
     );
 };
 

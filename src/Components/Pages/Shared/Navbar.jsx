@@ -7,7 +7,6 @@ const Navbar = () => {
     const navlinks = <>
         <li><NavLink to="/" className={({ isActive }) => isActive ? 'text-sm font-bold text-[#FF444A]' : 'text-sm bg-transparent text-[#f8f5f5]'}>Profile</NavLink></li>
         <li><NavLink className={({ isActive }) => isActive ? 'text-sm  font-bold text-[#FF444A]' : 'text-sm  bg-transparent text-[#f8f5f5]'} to="/projects" >My Projects</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? 'text-sm  font-bold text-[#FF444A]' : 'text-sm  bg-transparent text-[#f8f5f5]'} to="/aboutme" >About Me</NavLink></li>
     </>
     return (
         <div className="bg-[#231f20] font-poppins ">
