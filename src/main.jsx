@@ -11,7 +11,6 @@ import Home from './Components/Pages/Home/Home';
 import ErrorPage from './Components/Pages/ErrorPAge/ErrorPage';
 import AllProjects from './Components/Pages/AllProjects/AllProjects';
 import Contactme from './Components/Pages/Contactme/Contactme';
-import ProjectDetails from './Components/Pages/ProjectDetails/ProjectDetails';
 
 const router = createBrowserRouter([
   {
@@ -30,11 +29,6 @@ const router = createBrowserRouter([
       {
         path : "/contact", 
         element : <Contactme></Contactme>
-      },
-      {
-        path : "/projectDetails/:id" , 
-        element : <ProjectDetails></ProjectDetails>,
-        loader : () => fetch('projects.json')
       }
     ]
   },
