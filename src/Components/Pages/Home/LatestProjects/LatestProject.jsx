@@ -6,7 +6,7 @@ const LatestProject = ({project_name , project_details , project_img}) => {
   
     return (
         <div className="card w-auto bg-base-100 shadow-xl">
-            <figure><img src={project_img} alt="Shoes" /></figure>
+            <figure className='h-40'><img className='bg-cover hover:bg-bottom' src={project_img} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{project_name}</h2>
                 <p>{project_details}...</p>
