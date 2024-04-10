@@ -2,15 +2,18 @@
 // import PropTypes from 'prop-types';
 
 import { Link, NavLink } from "react-router-dom";
-
+import { motion } from 'framer-motion'
 const Navbar = () => {
     const navlinks = <>
         <li><NavLink to="/" className={({ isActive }) => isActive ? 'text-sm font-bold text-[#FF444A]' : 'text-sm bg-transparent text-[#f8f5f5]'}>Profile</NavLink></li>
         <li><NavLink className={({ isActive }) => isActive ? 'text-sm  font-bold text-[#FF444A]' : 'text-sm  bg-transparent text-[#f8f5f5]'} to="/projects" >My Projects</NavLink></li>
     </>
     return (
-        <div className="bg-[#231f20] font-poppins ">
-            <div className=" navbar max-w-7xl  mx-auto">
+        <motion.div
+            className="bg-[#231f20] font-poppins ">
+            <motion.div initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8, duration: 0.3 }} className=" navbar max-w-7xl  mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-[#FF444A] ">
@@ -30,10 +33,10 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <Link to="/contact"><a className="btn btn-sm sm:btn-sm md:btn-md ">Contact Me</a></Link>
-                    
+
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 
