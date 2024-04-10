@@ -16,7 +16,7 @@ const Banner = () => {
                 <div className="px-2 text-center ">
                     <img className="w-full h-80 " src={ayonsign} alt="ayon saha" />
                     <h2 className="text-white text-sm md:text-lg  -mt-16">{text}<Cursor cursorColor='red' /></h2>
-                    <p className="py-2 text-xs md:text-sm w-2/3 mx-auto text-white">I am a web developer. I always try to turn creative ideas into responsive and user-friendly websites. My goal is to be an expert developer.</p>
+                    <p className="py-2 text-xs md:text-sm w-2/3 mx-auto text-white">A MERN Stack Developer with expertise in building dynamic web applications. Skilled in frontend technologies.Proficient in MongoDB for database management. Adept at delivering user-friendly interfaces and responsive designs.</p>
                     <a href="https://drive.google.com/file/d/1C-vJosdSAjaC8i-u_GbmEY0mrgTmZ6WA/view?usp=drivesdk" target="blank"><button className="btn">Download CV</button></a>
 
                 </div>
