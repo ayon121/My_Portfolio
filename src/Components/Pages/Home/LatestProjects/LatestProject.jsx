@@ -9,7 +9,7 @@ const LatestProject = ({project_name , project_details , project_img , project_g
     return (
         <motion.div
         whileHover={{scale : 1.1}}
-        className="card w-auto bg-base-100 shadow-xl border-2 border-[#FF444A] mb-3 mx-2">
+        className="card w-auto bg-base-100 shadow-xl border-2 border-[#FF444A] hover:border-black mb-3 mx-2">
             <Link target='_blank'  to={livelink}> <figure className='rounded-t-2xl h-40 hover:bg-bottom duration-[4000ms] '  style={{ backgroundImage: `url(${project_img})`, backgroundSize: 'cover'}}></figure></Link>
             <div className="card-body">
                 <h2 className="card-title">{project_name}</h2>

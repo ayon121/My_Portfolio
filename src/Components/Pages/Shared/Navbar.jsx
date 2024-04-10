@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const Navbar = () => {
     const navlinks = <>
         <li><NavLink to="/" className={({ isActive }) => isActive ? 'text-sm font-bold text-[#FF444A]' : 'text-sm bg-transparent text-[#f8f5f5]'}>Profile</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? 'text-sm  font-bold text-[#FF444A]' : 'text-sm  bg-transparent text-[#f8f5f5]'} to="/projects" >My Projects</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? 'text-sm  font-bold text-[#FF444A]' : 'text-sm  bg-transparent text-[#f8f5f5]'} to="/allprojects" >My Projects</NavLink></li>
     </>
     return (
         <motion.div
